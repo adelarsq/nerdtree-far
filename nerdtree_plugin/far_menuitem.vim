@@ -8,7 +8,7 @@ let s:haskdeinit = system("ps -e") =~ 'kdeinit'
 let s:hasdarwin = system("uname -s") =~ 'Darwin'
 
 call NERDTreeAddMenuItem({
-      \ 'text': '(f)ar search and replace',
+      \ 'text': '(f)ar search and replace '.emoji#for('repeat'),
       \ 'shortcut': 'f',
       \ 'callback': 'NERDTreeFarSearch' })
 
