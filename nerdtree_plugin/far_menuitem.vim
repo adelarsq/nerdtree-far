@@ -8,8 +8,8 @@ let s:haskdeinit = system("ps -e") =~ 'kdeinit'
 let s:hasdarwin = system("uname -s") =~ 'Darwin'
 
 call NERDTreeAddMenuItem({
-      \ 'text': 'f(z)f search',
-      \ 'shortcut': 'z',
+      \ 'text': '(f)ar search and replace',
+      \ 'shortcut': 'f',
       \ 'callback': 'NERDTreeFarSearch' })
 
 function! NERDTreeFarSearch()
