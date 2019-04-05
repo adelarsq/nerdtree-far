@@ -18,14 +18,10 @@ function! NERDTreeFarSearch()
   let treenode = g:NERDTreeFileNode.GetSelected()
   let path = treenode.path.str()
 
-  let g:oldcwd=g:far#cwd
-
-  let s:cmd = 'Farp'
+  let s:cmd = 'Farp --cwd='.path.' --win-layout=tab'
   execute s:cmd
 
   let &shellslash=l:oldssl
-
-  let g:far#cwd=g:oldcwd
 
   redraw!
 endfunction
